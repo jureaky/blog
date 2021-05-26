@@ -6,7 +6,7 @@ languageCode = "en"
 title = "Teclip by Jureaky"
 
 # Change the default theme to be use when building the site with Hugo
-theme = "LoveIt"
+theme = "uBlogger"
 
 enableEmoji = true
 
@@ -40,8 +40,8 @@ enableEmoji = true
     weight = 3
 
 [params]
-  # LoveIt theme version
-  version = "0.2.X"
+  # uBlogger theme version
+  version = "2.0.X"
   # site description
   description = "Tech Clips"
   # site keywords
@@ -238,6 +238,8 @@ enableEmoji = true
 
   # LoveIt CHANGED | 0.2.0 Page config
   [params.page]
+    # Main subject for articles, default = classic, available = [ classic | wide | full ]
+    theme = "full"
     # LoveIt NEW | 0.2.0 whether to hide a page from home page
     hiddenFromHomePage = false
     # LoveIt NEW | 0.2.0 whether to hide a page from search results
@@ -300,8 +302,8 @@ enableEmoji = true
       enable = true
       Twitter = true
       Facebook = true
-      Linkedin = false
-      Whatsapp = true
+      Linkedin = true
+      Whatsapp = false
       Pinterest = false
       Tumblr = false
       HackerNews = false
@@ -309,74 +311,23 @@ enableEmoji = true
       VK = false
       Buffer = false
       Xing = false
-      Line = true
+      Line = false
       Instapaper = false
       Pocket = false
       Digg = false
       Stumbleupon = false
       Flipboard = false
-      Weibo = true
+      Weibo = false
       Renren = false
-      Myspace = true
-      Blogger = true
+      Myspace = false
+      Blogger = false
       Baidu = false
       Odnoklassniki = false
-      Evernote = true
+      Evernote = false
       Skype = false
       Trello = false
       Mix = false
-    # LoveIt CHANGED | 0.2.0 Comment config
-    [params.page.comment]
-      enable = true
-      # Disqus comment config
-      [params.page.comment.disqus]
-        # LoveIt NEW | 0.1.1
-        enable = false
-        # Disqus shortname to use Disqus in posts
-        shortname = ""
-      # Gitalk comment config
-      [params.page.comment.gitalk]
-        # LoveIt NEW | 0.1.1
-        enable = false
-        owner = ""
-        repo = ""
-        clientId = ""
-        clientSecret = ""
-      # Valine comment config
-      [params.page.comment.valine]
-        enable = false
-        appId = ""
-        appKey = ""
-        placeholder = ""
-        avatar = "mp"
-        meta= ""
-        pageSize = 10
-        lang = ""
-        visitor = true
-        recordIP = true
-        highlight = true
-        enableQQ = false
-        serverURLs = ""
-      # Facebook comment config
-      [params.page.comment.facebook]
-        enable = false
-        width = "100%"
-        numPosts = 10
-        appId = ""
-        languageCode = ""
-      # LoveIt NEW | 0.2.0 Telegram comments config
-      [params.page.comment.telegram]
-        enable = false
-        siteID = ""
-        limit = 5
-        height = ""
-        color = ""
-        colorful = true
-        dislikes = false
-        outlined = false
-      # LoveIt NEW | 0.2.0 Commento comment config
-      [params.page.comment.commento]
-        enable = false
+
     # LoveIt NEW | 0.2.0 SEO config
     [params.page.seo]
       # Publisher info
@@ -396,6 +347,18 @@ enableEmoji = true
         url = "cover.png"
         width = 800
         height = 600
+
+    # Comment config
+    [params.comment]
+      enable = true
+      # uBlogger NEW | 0.2.5 Utterances comment config
+      [params.comment.utterances]
+        enable = true
+        repo = "jureaky/blog-comments"
+        issueTerm = "pathname"
+        label = ""
+        lightTheme = "github-light"
+        darkTheme = "github-dark"
 
   # Site verification code config for Google/Bing/Yandex/Pinterest/Baidu
   [params.verification]
@@ -513,8 +476,6 @@ enableEmoji = true
 # Author config
 [author]
   name = "jureaky"
-  email = "jureaky@gmail.com"
-  link = ""
 
 # Sitemap config
 [sitemap]

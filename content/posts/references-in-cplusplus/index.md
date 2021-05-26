@@ -2,10 +2,13 @@
 title: "References in C++"
 date: 2020-05-06T02:45:20+09:00
 draft: false
-featuredImage: /images/references-in-cplusplus/featured-img.png
+resources:
+- name: "featured-image"
+  src: "images/featured-img.png"
 summary: What is a reference(&) in C++?
 tags: ["Cpp"]
 categories: ["Lang"]
+
 ---
 
 ## 1 Concept of a Reference in C++

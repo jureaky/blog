@@ -2,7 +2,9 @@
 title: "Create a Github Blog With Hugo"
 date: 2020-04-30T21:15:39+09:00
 draft: false
-featuredImage: /images/create-a-github-blog-with-hugo/featured-img.png
+resources:
+- name: "featured-image"
+  src: "images/featured-img.png"
 summary: Figure out How I created this blog using Hugo.
 tags: ["Blog", "Hugo"]
 categories: ["Env"]
@@ -132,10 +134,7 @@ $ git submodule add https://github.com/dillonzq/LoveIt.git themes/LoveIt
 ### Blog Configuration
 
 Blog configuration is done through `config.toml` file in your root directory. Modify this file and add apropriate configurations. There might be a document for this in your theme page.
-For LoveIt theme, menu configuration can be found [here](https://hugoloveit.com/theme-documentation-basics/#basic-configuration), and site configuration [here](
-
-https://hugoloveit.com/theme-documentation-basics/#site-configuration
-).
+For LoveIt theme, menu configuration can be found [here](https://hugoloveit.com/theme-documentation-basics/#basic-configuration), and site configuration [here](https://hugoloveit.com/theme-documentation-basics/#site-configuration).
 Further, I overrided some css variables to change fonts by creating `config/css/_override.scss` file:
 ```scss
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Zilla+Slab&display=swap');
@@ -172,7 +171,7 @@ $ hugo serve -D
 `http://localhost:1313`.
 I can see this post I wrote has uploaded.
 
-{{< image src="/images/create-a-github-blog-with-hugo/local-screenshot.png" caption="Screenshot from `localhost`">}}
+{{< image src="images/local-screenshot.png" caption="Screenshot from `localhost`">}}
 
 Wow !
 

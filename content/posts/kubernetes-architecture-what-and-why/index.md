@@ -2,7 +2,9 @@
 title: "Kubernetes Architecture - What and Why"
 date: 2020-12-24T16:25:20+09:00
 draft: false
-featuredImage: /images/kubernetes-architecture-what-and-why/featured-img.png
+resources:
+- name: "featured-image"
+  src: "images/featured-img.png"
 summary: Kubernetes Architecture and Design Principles Behind It.
 tags: ["Kubernetes"]
 categories: ["Container"]
@@ -18,7 +20,7 @@ The video can be found [here](https://www.youtube.com/watch?v=ZuIQurh_kDk).
 
 ## 1 Kubernetes Architecture - Main Components
 
-{{< image src="/images/kubernetes-architecture-what-and-why/kubernetes-architecture.png">}}
+{{< image src="images/kubernetes-architecture.png">}}
 
 Kubernetes Cluster is divided into two parts:
 

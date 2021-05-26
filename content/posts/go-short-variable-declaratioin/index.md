@@ -2,7 +2,9 @@
 title: "[Go] Short Variable Declaration"
 date: 2020-07-19T17:21:16+09:00
 draft: false
-featuredImage: /images/go-short-variable-declaration/featured-img.png
+resources:
+- name: "featured-image"
+  src: "images/featured-img.png"
 summary: How short variable declaration is used in Go.
 tags: ["Go"]
 categories: ["Lang"]
