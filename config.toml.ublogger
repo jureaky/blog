@@ -281,6 +281,7 @@ enableEmoji = true
       copy = true
       # the maximum number of lines of displayed code by default
       maxShownLines = 30
+      lineNos = false
     # LoveIt NEW | 0.2.0 Mapbox GL JS config
     [params.page.mapbox]
       # access token of Mapbox GL JS
@@ -348,6 +349,8 @@ enableEmoji = true
         width = 800
         height = 600
 
+    [params.prismjs]
+      enable = true
     # Comment config
     [params.comment]
       enable = true

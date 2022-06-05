@@ -2,6 +2,7 @@
 title: "[Design Patterns] Builder Pattern"
 date: 2021-10-18T21:39:03+09:00
 draft: false
+ShowToc: true
 resources:
 - name: "featured-image"
   src: "images/featured-img.jpeg"

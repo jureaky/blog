@@ -2,6 +2,7 @@
 title: "Create a Github Blog With Hugo"
 date: 2020-04-30T21:15:39+09:00
 draft: false
+ShowToc: true
 resources:
 - name: "featured-image"
   src: "images/featured-img.png"
@@ -171,7 +172,7 @@ $ hugo serve -D
 `http://localhost:1313`.
 I can see this post I wrote has uploaded.
 
-{{< image src="images/local-screenshot.png" caption="Screenshot from `localhost`">}}
+{{< figure src="images/local-screenshot.png" caption="Screenshot from `localhost`">}}
 
 Wow !
 

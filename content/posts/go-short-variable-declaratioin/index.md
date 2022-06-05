@@ -2,6 +2,7 @@
 title: "[Go] Short Variable Declaration"
 date: 2020-07-19T17:21:16+09:00
 draft: false
+ShowToc: true
 resources:
 - name: "featured-image"
   src: "images/featured-img.png"

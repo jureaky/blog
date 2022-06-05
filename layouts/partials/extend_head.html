@@ -1,0 +1,10 @@
+{{- /* Head custom content area start */ -}}
+{{- /*     Insert any custom code (web-analytics, resources, etc.) - it will appear in the <head></head> section of every page. */ -}}
+{{- /*     Can be overwritten by partial with the same name in the global layouts. */ -}}
+{{- /* Head custom content area end */ -}}
+
+{{- if eq .Kind "page" -}}
+{{ $options := (dict "targetPath" "css/partials/admonition.css" "outputStyle" "compressed" "enableSourceMap" true) }}
+{{ $style := resources.Get "css/admonition.scss" | resources.ToCSS $options }}
+<link crossorigin="anonymous" href="{{ $style.RelPermalink }}" rel="preload stylesheet" as="style">
+{{ end }}

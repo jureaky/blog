@@ -2,6 +2,7 @@
 title: "References in C++"
 date: 2020-05-06T02:45:20+09:00
 draft: false
+ShowToc: true
 resources:
 - name: "featured-image"
   src: "images/featured-img.png"

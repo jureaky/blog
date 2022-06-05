@@ -1,10 +1,12 @@
 ---
 title: "[C] Read String With fgets() and sscanf() instead of scanf()"
 date: 2022-05-30T13:39:19+09:00
-draft: true
+draft: false
+ShowToc: true
 resources:
 - name: "featured-image"
   src: "images/featured-img.jpg"
+summary: "How to safely read strings in C ?"
 tags: ["C"]
 categories: ["Lang"]
 
@@ -12,7 +14,7 @@ categories: ["Lang"]
 
 ## 1 Problem with scanf() when reading a string
 
-{{< prism line=true lang="clike">}}
+```c
 int main(void)
 {
     char str[10];
@@ -22,7 +24,7 @@ int main(void)
     printf("String read: %s\n", str);
 
 }
-{{< /prism >}}
+```
 
 Look at the simple code block above. This code just reads a non-whitespaced string from a user and write to `str` character array, which has size 10 bytes.
 
